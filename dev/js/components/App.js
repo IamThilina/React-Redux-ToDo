@@ -1,16 +1,14 @@
-import React from 'react';
-import UserList from '../containers/user-list';
-import UserDetails from '../containers/user-detail';
-require('../../scss/style.scss');
+import React from 'react'
+import Footer from './Footer'
+import AddTodo from '../containers/AddTodo'
+import VisibleTodoList from '../containers/VisibleTodoList'
 
 const App = () => (
     <div>
-        <h2>User List</h2>
-        <UserList />
-        <hr />
-        <h2>User Details</h2>
-        <UserDetails />
+            <AddTodo />
+            <VisibleTodoList />
+            <Footer />
     </div>
-);
+)
 
-export default App;
+export default App
